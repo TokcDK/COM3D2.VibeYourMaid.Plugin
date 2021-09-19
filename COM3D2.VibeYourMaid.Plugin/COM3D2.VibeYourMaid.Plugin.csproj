@@ -32,16 +32,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
-      <HintPath>G:\repos\COM3D2.VibeYourMaid.Plugin\lib\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\lib\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>G:\repos\COM3D2.VibeYourMaid.Plugin\lib\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>..\lib\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="COM3D2.ExternalSaveData.Managed">
-      <HintPath>G:\repos\COM3D2.VibeYourMaid.Plugin\lib\COM3D2.ExternalSaveData.Managed.dll</HintPath>
+      <HintPath>..\lib\COM3D2.ExternalSaveData.Managed.dll</HintPath>
     </Reference>
     <Reference Include="PluginExt">
-      <HintPath>G:\repos\COM3D2.VibeYourMaid.Plugin\lib\PluginExt.dll</HintPath>
+      <HintPath>..\lib\PluginExt.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -51,10 +51,10 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine">
-      <HintPath>G:\repos\COM3D2.VibeYourMaid.Plugin\lib\UnityEngine.dll</HintPath>
+      <HintPath>..\lib\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityInjector">
-      <HintPath>G:\repos\COM3D2.VibeYourMaid.Plugin\lib\UnityInjector.dll</HintPath>
+      <HintPath>..\lib\UnityInjector.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
