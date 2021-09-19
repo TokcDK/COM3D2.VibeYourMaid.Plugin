@@ -14,6 +14,7 @@ using UnityInjector;
 using System.Xml;
 using System.Threading;
 using CM3D2.ExternalSaveData.Managed;
+using UnityEngine.SceneManagement;
 
 
 // コンパイル用コマンド　"C:\Windows\Microsoft.NET\Framework\v3.5\csc" /t:library /lib:..\CM3D2x64_Data（環境に合わせて変更）\Managed /r:UnityEngine.dll /r:UnityInjector.dll /r:Assembly-CSharp.dll /r:Assembly-CSharp-firstpass.dll /r:ExIni.dll /r:..\COM3D2.ExternalSaveData.Managed.dll COM3D2.VibeYourMaid.Plugin.cs
@@ -1765,7 +1766,21 @@ namespace CM3D2.VibeYourMaid.Plugin
 
             //レベルの取得
             vSceneLevel = level;
+        }
 
+        void OnEnable()
+        {
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+
+        void OnDisable()
+        {
+            SceneManager.sceneLoaded -= OnSceneLoaded;
+        }
+
+        //src:https://answers.unity.com/questions/1174255/since-onlevelwasloaded-is-deprecated-in-540b15-wha.html
+        private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+        {
             //有効シーンにある場合プラグインを有効化（現在は基本的に、メイドさんがいれば全てのシーンで有効）
             SceneLevelEnable = true;
 
@@ -1792,12 +1807,12 @@ namespace CM3D2.VibeYourMaid.Plugin
                 SubMans[i] = GameMain.Instance.CharacterMgr.GetMan(i);
             }
             //男Body取得のため、一度呼び出しておく
-            if (vSceneLevel == 15 && MansFGet < 2)
+            if (vSceneLevel == 15 && MansFGet < 2 && scene.name != "SceneADV")
             {
                 ++MansFGet;
                 foreach (Maid m in SubMans)
                 {
-                    m.Visible = true;
+                    m.Visible = true;//in guest mode main menu it cause all customers enabled and because was added scene name check above
                     m.transform.position = new Vector3(0f, -10f, 0f);
                 }
             }
@@ -2297,12 +2312,12 @@ namespace CM3D2.VibeYourMaid.Plugin
 
 
                 //メインメイドが変わったときの処理
-                if (tgID != tgIDBack)
+                if (tgID != tgIDBack/*>*/ && SceneLevelEnable && cfgw.bPluginEnabledV && cfgw.mainGuiFlag > 0/*<move only when plugin/scene enabled and plugin menu displayed*/)
                 {
                     if (man.Visible && cfgw.autoMoveEnabled)
                     {
                         MansTg[0] = tgID;
-                        man.transform.position = stockMaids[tgID].mem.transform.position;
+                        man.transform.position = stockMaids[tgID].mem.transform.position;//<in scenes it always move player to 1st maid if not to check it, was breaking training and some other scenes
                         man.transform.eulerAngles = stockMaids[tgID].mem.transform.eulerAngles;
                         ManMotionChange(tgID, true, 0.5f, 1.0f);
                     }
