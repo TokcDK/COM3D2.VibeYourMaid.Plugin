@@ -1914,8 +1914,9 @@ namespace CM3D2.VibeYourMaid.Plugin
             if (tgID != -1 && SceneLevelEnable && cfgw.bPluginEnabledV)
             {
 
-                foreach (int maidID in vmId)
+                for (int i = 0; i < vmId.Count; i++)
                 {
+                    int maidID = vmId[i];
 
                     //非表示のメイドがいたらアクティブメイドをチェックし直す
                     if (!stockMaids[maidID].mem.Visible)
