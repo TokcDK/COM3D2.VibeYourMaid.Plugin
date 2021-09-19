@@ -1,13 +1,10 @@
-﻿
-
-
-
-namespace COM3D2.VibeYourMaid.Plugin.Personalities
+﻿namespace COM3D2.VibeYourMaid.Plugin.Personalities
 {
     class Muku : PersonalityBase
     {
         public override string NameJp => "無垢";
         public override string NameEn => "Muku";
+
         //性格別声テーブル　無垢---------------------------------------------------------------
         //弱バイブ　通常
         public override string[][] sLoopVoice20Vibe => new string[][] {

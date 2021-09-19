@@ -4,6 +4,9 @@
     {
         public override string NameJp => "純真";
         public override string NameEn => "Pure";
+
+        //性格別声テーブル　純真---------------------------------------------------------------
+        //弱バイブ　通常
         public override string[][] sLoopVoice20Vibe => new string[][] {
               new string[] { "s2_01235.ogg" , "s2_01236.ogg" , "s2_01237.ogg" , "s2_01238.ogg" },
               new string[] { "s2_01235.ogg" , "s2_01236.ogg" , "s2_01237.ogg" , "s2_01238.ogg" },

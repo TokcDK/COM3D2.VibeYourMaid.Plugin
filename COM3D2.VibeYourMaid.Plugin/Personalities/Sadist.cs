@@ -1,12 +1,10 @@
-﻿
-
-
-namespace COM3D2.VibeYourMaid.Plugin.Personalities
+﻿namespace COM3D2.VibeYourMaid.Plugin.Personalities
 {
     class Sadist : PersonalityBase
     {
         public override string NameJp => "ドＳ";
         public override string NameEn => "Sadist";
+
         //性格別声テーブル　ドＳ---------------------------------------------------------------
         //弱バイブ　通常
         public override string[][] sLoopVoice20Vibe => new string[][] {

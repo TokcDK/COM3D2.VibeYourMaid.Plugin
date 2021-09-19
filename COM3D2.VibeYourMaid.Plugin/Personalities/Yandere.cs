@@ -5,7 +5,6 @@
         public override string NameJp => "ヤンデレ";
         public override string NameEn => "Yandere";
 
-
         //性格別声テーブル　ヤンデレ---------------------------------------------------------------
         //弱バイブ　通常
         public override string[][] sLoopVoice20Vibe => new string[][] {
