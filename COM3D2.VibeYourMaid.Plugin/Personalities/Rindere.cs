@@ -4,6 +4,7 @@
     {
         public override string NameJp => "凛デレ";
         public override string NameEn => "Rindere";
+        public override string[] reactionVoice => new string[] { "H2_06092.ogg", "H2_00252.ogg", "H2_00285.ogg", "H2_00277.ogg" }; //Rindere
 
         //性格別声テーブル　凛デレ---------------------------------------------------------------
         //弱バイブ　通常

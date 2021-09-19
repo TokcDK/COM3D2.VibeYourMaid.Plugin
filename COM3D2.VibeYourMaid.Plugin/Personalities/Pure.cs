@@ -4,6 +4,7 @@
     {
         public override string NameJp => "純真";
         public override string NameEn => "Pure";
+        public override string[] reactionVoice => new string[] { "s2_01478.ogg", "s2_01477.ogg", "s2_01476.ogg", "s2_01475.ogg" }; //Pure
 
         //性格別声テーブル　純真---------------------------------------------------------------
         //弱バイブ　通常

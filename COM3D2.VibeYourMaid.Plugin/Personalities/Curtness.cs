@@ -4,6 +4,7 @@
     {
         public override string NameJp => "無愛想";
         public override string NameEn => "Curtness";
+        public override string[] reactionVoice => new string[] { "H8_08466.ogg", "H8_01430.ogg", "H8_01421.ogg", "H8_01382.ogg", "H8_01396.ogg", "H8_01398.ogg" }; //Curtness
 
         //性格別声テーブル　無愛想---------------------------------------------------------------
         //弱バイブ　通常

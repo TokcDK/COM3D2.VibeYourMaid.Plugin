@@ -4,6 +4,7 @@
     {
         public override string NameJp => "姉ちゃん";
         public override string NameEn => "Anesan";
+        public override string[] reactionVoice => new string[] { "s4_08348.ogg", "s4_08354.ogg", "s4_08365.ogg", "s4_08374.ogg" }; //Anesan
 
         //性格別声テーブル　お姉ちゃん---------------------------------------------------------------
         //弱バイブ　通常

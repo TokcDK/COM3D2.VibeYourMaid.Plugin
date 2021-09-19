@@ -4,6 +4,7 @@
     {
         public override string NameJp => "小悪魔";
         public override string NameEn => "Devilish";
+        public override string[] reactionVoice => new string[] { "H4_01200.ogg", "H4_01204.ogg", "H4_01209.ogg", "H4_01208.ogg" }; //Devilish
 
         //性格別声テーブル　小悪魔---------------------------------------------------------------
         //弱バイブ　通常

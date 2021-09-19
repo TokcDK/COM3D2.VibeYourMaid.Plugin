@@ -5,6 +5,8 @@
         public override string NameJp => "ツンデレ";
         public override string NameEn => "Pride";
 
+        public override string[] reactionVoice => new string[] { "s0_01898.ogg", "s0_01899.ogg", "s0_01902.ogg", "s0_01900.ogg" }; //Pride
+
         //性格別声テーブル　ツンデレ---------------------------------------------------------------
         //弱バイブ　通常
         public override string[][] sLoopVoice20Vibe => new string[][] {
@@ -56,5 +58,6 @@
               };
         //停止時
         public override string[] sLoopVoice40Vibe => new string[] { "S0_01967.ogg", "S0_01967.ogg", "S0_01968.ogg", "S0_01969.ogg", "S0_01969.ogg" };
+
     }
 }

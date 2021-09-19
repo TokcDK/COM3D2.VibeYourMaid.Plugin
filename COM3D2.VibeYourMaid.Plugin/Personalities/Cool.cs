@@ -4,6 +4,7 @@
     {
         public override string NameJp => "クーデレ";
         public override string NameEn => "Cool";
+        public override string[] reactionVoice => new string[] { "s1_03223.ogg", "s1_03246.ogg", "s1_03247.ogg", "s1_03210.ogg" }; //Cool
 
         //性格別声テーブル　クーデレ---------------------------------------------------------------
         //弱バイブ　通常

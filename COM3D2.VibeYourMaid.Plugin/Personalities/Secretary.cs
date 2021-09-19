@@ -4,6 +4,7 @@
     {
         public override string NameJp => "ﾒｲﾄﾞ秘書";
         public override string NameEn => "Secretary";
+        public override string[] reactionVoice => new string[] { "H6_00421.ogg", "H6_00429.ogg", "H6_00448.ogg", "H6_00409.ogg" }; //Secretary
 
         //性格別声テーブル　メイド秘書---------------------------------------------------------------
         //弱バイブ　通常

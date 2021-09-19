@@ -4,6 +4,7 @@
     {
         public override string NameJp => "無口";
         public override string NameEn => "Silent";
+        public override string[] reactionVoice => new string[] { "H3_00779.ogg", "H3_00783.ogg", "H3_00785.ogg", "H3_00800.ogg" }; //Silent
 
         //性格別声テーブル　無口---------------------------------------------------------------
         //弱バイブ　通常

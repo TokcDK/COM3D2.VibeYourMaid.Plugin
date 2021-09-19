@@ -4,6 +4,7 @@
     {
         public override string NameJp => "幼馴染";
         public override string NameEn => "Childhood";
+        public override string[] reactionVoice => new string[] { "H10_04104.ogg", "H10_04120.ogg", "H10_04108.ogg", "H10_04092.ogg", "H10_04112.ogg", "H10_04242.ogg", "H10_04253.ogg" }; //Childhood
 
         //性格別声テーブル　幼馴染---------------------------------------------------------------
         //弱バイブ　通常

@@ -4,6 +4,7 @@
     {
         public override string NameJp => "無垢";
         public override string NameEn => "Muku";
+        public override string[] reactionVoice => new string[] { "H0_00289.ogg", "H0_00290.ogg", "H0_00291.ogg", "H0_00292.ogg" }; //Muku
 
         //性格別声テーブル　無垢---------------------------------------------------------------
         //弱バイブ　通常

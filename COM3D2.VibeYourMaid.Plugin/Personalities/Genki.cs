@@ -4,6 +4,7 @@
     {
         public override string NameJp => "僕っ娘";
         public override string NameEn => "Genki";
+        public override string[] reactionVoice => new string[] { "s5_04264.ogg", "s5_04258.ogg", "s5_04256.ogg", "s5_04255.ogg" }; //Genki
 
         //性格別声テーブル　ボクっ娘---------------------------------------------------------------
         //弱バイブ　通常

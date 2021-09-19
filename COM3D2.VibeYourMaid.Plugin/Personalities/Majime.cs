@@ -4,6 +4,7 @@
     {
         public override string NameJp => "真面目";
         public override string NameEn => "Majime";
+        public override string[] reactionVoice => new string[] { "H1_11482.ogg", "H1_13858.ogg", "H1_13879.ogg", "H1_13918.ogg" }; //Majime
 
         //性格別声テーブル　真面目---------------------------------------------------------------
         //弱バイブ　通常

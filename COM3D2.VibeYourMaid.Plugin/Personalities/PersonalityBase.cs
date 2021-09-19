@@ -12,5 +12,7 @@
         public virtual string[][] sOrgasmVoice30Vibe => new string[][] { };
         public virtual string[][] sOrgasmVoice30Fera => new string[][] { };
         public virtual string[] sLoopVoice40Vibe => new string[] { };
+
+        public virtual string[] reactionVoice => new string[] { };
     }
 }

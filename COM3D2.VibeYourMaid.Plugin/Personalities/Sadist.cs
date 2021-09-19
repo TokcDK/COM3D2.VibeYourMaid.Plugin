@@ -4,6 +4,7 @@
     {
         public override string NameJp => "ドＳ";
         public override string NameEn => "Sadist";
+        public override string[] reactionVoice => new string[] { "s6_01744.ogg", "s6_02700.ogg", "s6_02450.ogg", "s6_02357.ogg" }; //Sadist
 
         //性格別声テーブル　ドＳ---------------------------------------------------------------
         //弱バイブ　通常

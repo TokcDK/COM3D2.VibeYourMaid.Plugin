@@ -4,6 +4,7 @@
     {
         public override string NameJp => "お嬢様";
         public override string NameEn => "Missy";
+        public override string[] reactionVoice => new string[] { "H9_00825.ogg", "H9_00833.ogg", "H9_00841.ogg", "H9_00824.ogg", "H9_00966.ogg", "H9_00860.ogg", "H9_00987.ogg" }; //Missy
 
         //性格別声テーブル　お嬢様---------------------------------------------------------------
         //弱バイブ　通常

@@ -4,6 +4,7 @@
     {
         public override string NameJp => "腹黒";
         public override string NameEn => "Crafty";
+        public override string[] reactionVoice => new string[] { "H12_01467.ogg", "H12_01468.ogg", "H12_01475.ogg", "H12_01460.ogg" }; //Crafty
 
         //性格別声テーブル　腹黒---------------------------------------------------------------
         //弱バイブ　通常

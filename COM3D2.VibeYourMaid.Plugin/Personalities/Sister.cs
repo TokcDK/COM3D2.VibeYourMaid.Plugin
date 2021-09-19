@@ -4,6 +4,7 @@
     {
         public override string NameJp => "ふわ妹";
         public override string NameEn => "Sister";
+        public override string[] reactionVoice => new string[] { "H7_03163.ogg", "H7_03167.ogg", "H7_03164.ogg", "H7_03172.ogg" }; //Sister
 
         //性格別声テーブル　ふわふわ妹---------------------------------------------------------------
         //弱バイブ　通常

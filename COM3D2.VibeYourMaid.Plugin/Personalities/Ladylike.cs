@@ -4,6 +4,7 @@
     {
         public override string NameJp => "お淑やか";
         public override string NameEn => "Ladylike";
+        public override string[] reactionVoice => new string[] { "H5_00943.ogg", "H5_00944.ogg", "H5_00948.ogg", "H5_00874.ogg" }; //Ladylike
 
         //性格別声テーブル　おしとやか---------------------------------------------------------------
         //弱バイブ　通常

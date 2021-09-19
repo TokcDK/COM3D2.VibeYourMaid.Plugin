@@ -4,6 +4,7 @@
     {
         public override string NameJp => "ドＭ";
         public override string NameEn => "Masochist";
+        public override string[] reactionVoice => new string[] { "H11_00902.ogg", "H11_00905.ogg", "H11_00923.ogg", "H11_00924.ogg" }; //Masochist
 
         //性格別声テーブル　ドＭ---------------------------------------------------------------
         //弱バイブ　通常

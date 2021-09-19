@@ -4,6 +4,7 @@
     {
         public override string NameJp => "ヤンデレ";
         public override string NameEn => "Yandere";
+        public override string[] reactionVoice => new string[] { "s3_02908.ogg", "s3_02950.ogg", "s3_02923.ogg", "s3_02932.ogg" }; //Yandere
 
         //性格別声テーブル　ヤンデレ---------------------------------------------------------------
         //弱バイブ　通常
