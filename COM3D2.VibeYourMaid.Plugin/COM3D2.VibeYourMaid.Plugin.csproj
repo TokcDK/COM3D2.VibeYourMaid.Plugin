@@ -59,6 +59,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="com3d2.vibeyourmaid.plugin.cs" />
+    <Compile Include="Personalities\Anesan.cs" />
+    <Compile Include="Personalities\Default.cs" />
+    <Compile Include="Personalities\Unspecified.cs" />
+    <Compile Include="Personalities\Childhood.cs" />
+    <Compile Include="Personalities\Cool.cs" />
+    <Compile Include="Personalities\Curtness.cs" />
+    <Compile Include="Personalities\Devilish.cs" />
+    <Compile Include="Personalities\Genki.cs" />
+    <Compile Include="Personalities\Ladylike.cs" />
+    <Compile Include="Personalities\PersonalityBase.cs" />
+    <Compile Include="Personalities\Majime.cs" />
+    <Compile Include="Personalities\Masochist.cs" />
+    <Compile Include="Personalities\Missy.cs" />
+    <Compile Include="Personalities\Muku.cs" />
+    <Compile Include="Personalities\Crafty.cs" />
+    <Compile Include="Personalities\Pride.cs" />
+    <Compile Include="Personalities\Pure.cs" />
+    <Compile Include="Personalities\Rindere.cs" />
+    <Compile Include="Personalities\Sadist.cs" />
+    <Compile Include="Personalities\Secretary.cs" />
+    <Compile Include="Personalities\Silent.cs" />
+    <Compile Include="Personalities\Sister.cs" />
+    <Compile Include="Personalities\Yandere.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
