@@ -499,7 +499,7 @@ namespace CM3D2.VibeYourMaid.Plugin
             {
                 PersonalityList.Select(s => s.NameJp).Concat(new string[] { new Unspecified().NameJp }).ToArray()
                 ,
-                PersonalityList.Select(s => s.NameEn).Concat(new string[] { new Unspecified().NameEn }).ToArray()
+                PersonalityList.Select(s => s.NameEn).ToArray()
             };
         }
 
