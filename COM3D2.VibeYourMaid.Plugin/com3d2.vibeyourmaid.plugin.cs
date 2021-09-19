@@ -2880,7 +2880,7 @@ namespace CM3D2.VibeYourMaid.Plugin
                     { //新たにメイドが表示されていた場合の処理
                       //メイドさんの顔と胸を取得する
                         Transform[] objList = sm.mem.transform.GetComponentsInChildren<Transform>();
-                        if (objList.Count() != 0)
+                        if (objList.Length != 0)
                         {
                             maidsState[sm.id].maidHead = null;
                             maidsState[sm.id].maidMune = null;
@@ -9935,7 +9935,7 @@ namespace CM3D2.VibeYourMaid.Plugin
             {
 
                 Transform[] objList = man.transform.GetComponentsInChildren<Transform>();
-                if (objList.Count() != 0)
+                if (objList.Length != 0)
                 {
                     manHead = null;
                     foreach (var gameobject in objList)
@@ -16894,7 +16894,7 @@ namespace CM3D2.VibeYourMaid.Plugin
             if (!maidsState[maidID].maidHead)
             {
                 Transform[] objList = stockMaids[maidID].mem.transform.GetComponentsInChildren<Transform>();
-                if (objList.Count() != 0)
+                if (objList.Length != 0)
                 {
                     maidsState[maidID].maidHead = null;
                     foreach (var gameobject in objList)
