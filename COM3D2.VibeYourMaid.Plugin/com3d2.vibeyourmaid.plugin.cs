@@ -574,9 +574,9 @@ namespace CM3D2.VibeYourMaid.Plugin
 
 
         //ステータス表示用
-        private string[] SucoreText1 = new string[] { "☆ ☆ ☆", "★ ☆ ☆", "★ ★ ☆", "★ ★ ★" };
-        private string[] SucoreText2 = new string[] { "☆ ☆ ☆", "★ ☆ ☆", "★ ★ ☆", "★ ★ ★" };
-        private string[] SucoreText3 = new string[] { "☆ ☆ ☆", "★ ☆ ☆", "★ ★ ☆", "★ ★ ★" };
+        private readonly string[] SucoreText1 = new string[] { "☆ ☆ ☆", "★ ☆ ☆", "★ ★ ☆", "★ ★ ★" };
+        private readonly string[] SucoreText2 = new string[] { "☆ ☆ ☆", "★ ☆ ☆", "★ ★ ☆", "★ ★ ★" };
+        private readonly string[] SucoreText3 = new string[] { "☆ ☆ ☆", "★ ☆ ☆", "★ ★ ☆", "★ ★ ★" };
 
 
 
