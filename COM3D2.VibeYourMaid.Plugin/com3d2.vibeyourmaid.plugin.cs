@@ -7800,7 +7800,7 @@ namespace CM3D2.VibeYourMaid.Plugin
             {
                 var bvssub = bvs[i];
 
-                for (int i2 = 0; i2 < 5; i2++)
+                for (int i2 = 0; i2 < bvssub.sLoopVoice20Vibe.Length; i2++)
                 {
                     _vf = new List<string>();
                     _vf.AddRange(bvssub.sLoopVoice20Vibe[i2]);
@@ -7816,7 +7816,7 @@ namespace CM3D2.VibeYourMaid.Plugin
                     bvssub.sLoopVoice20Vibe[i2] = _vf.ToArray();
                 }
 
-                for (int i2 = 0; i2 < 5; i2++)
+                for (int i2 = 0; i2 < bvssub.sLoopVoice20Fera.Length; i2++)
                 {
                     _vf = new List<string>();
                     _vf.AddRange(bvssub.sLoopVoice20Fera[i2]);
@@ -7832,7 +7832,7 @@ namespace CM3D2.VibeYourMaid.Plugin
                     bvssub.sLoopVoice20Fera[i2] = _vf.ToArray();
                 }
 
-                for (int i2 = 0; i2 < 5; i2++)
+                for (int i2 = 0; i2 < bvssub.sLoopVoice30Vibe.Length; i2++)
                 {
                     _vf = new List<string>();
                     _vf.AddRange(bvssub.sLoopVoice30Vibe[i2]);
@@ -7848,7 +7848,7 @@ namespace CM3D2.VibeYourMaid.Plugin
                     bvssub.sLoopVoice30Vibe[i2] = _vf.ToArray();
                 }
 
-                for (int i2 = 0; i2 < 5; i2++)
+                for (int i2 = 0; i2 < bvssub.sLoopVoice30Fera.Length; i2++)
                 {
                     _vf = new List<string>();
                     _vf.AddRange(bvssub.sLoopVoice30Fera[i2]);
@@ -7864,7 +7864,7 @@ namespace CM3D2.VibeYourMaid.Plugin
                     bvssub.sLoopVoice30Fera[i2] = _vf.ToArray();
                 }
 
-                for (int i2 = 0; i2 < 5; i2++)
+                for (int i2 = 0; i2 < bvssub.sOrgasmVoice30Vibe.Length; i2++)
                 {
                     _vf = new List<string>();
                     _vf.AddRange(bvssub.sOrgasmVoice30Vibe[i2]);
@@ -7880,7 +7880,7 @@ namespace CM3D2.VibeYourMaid.Plugin
                     bvssub.sOrgasmVoice30Vibe[i2] = _vf.ToArray();
                 }
 
-                for (int i2 = 0; i2 < 5; i2++)
+                for (int i2 = 0; i2 < bvssub.sOrgasmVoice30Fera.Length; i2++)
                 {
                     _vf = new List<string>();
                     _vf.AddRange(bvssub.sOrgasmVoice30Fera[i2]);
@@ -7911,7 +7911,6 @@ namespace CM3D2.VibeYourMaid.Plugin
                 bvssub.sLoopVoice40Vibe = _vf.ToArray();
 
             }
-
         }
 
 
