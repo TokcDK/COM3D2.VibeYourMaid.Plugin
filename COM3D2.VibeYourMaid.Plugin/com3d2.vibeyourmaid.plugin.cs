@@ -7794,15 +7794,16 @@ namespace CM3D2.VibeYourMaid.Plugin
         //基本ボイスセットから、存在しないファイルを除外
         private void BvsCheck()
         {
-
-            var _vf = new List<string>();
-            for (int i = 0; i < bvs.Length; i++)
+            List<string> _vf;
+            var max = bvs.Length;
+            for (int i = 0; i < max; i++)
             {
+                var bvssub = bvs[i];
 
                 for (int i2 = 0; i2 < 5; i2++)
                 {
                     _vf = new List<string>();
-                    _vf.AddRange(bvs[i].sLoopVoice20Vibe[i2]);
+                    _vf.AddRange(bvssub.sLoopVoice20Vibe[i2]);
                     for (int i3 = 0; i3 < _vf.Count; i3++)
                     {
                         if (!GameUty.FileSystem.IsExistentFile(_vf[i3]) && !GameUty.FileSystemOld.IsExistentFile(_vf[i3]) && _vf[i3] != "" && _vf[i3] != ".ogg")
@@ -7812,13 +7813,13 @@ namespace CM3D2.VibeYourMaid.Plugin
                             i3--;
                         }
                     }
-                    bvs[i].sLoopVoice20Vibe[i2] = _vf.ToArray();
+                    bvssub.sLoopVoice20Vibe[i2] = _vf.ToArray();
                 }
 
                 for (int i2 = 0; i2 < 5; i2++)
                 {
                     _vf = new List<string>();
-                    _vf.AddRange(bvs[i].sLoopVoice20Fera[i2]);
+                    _vf.AddRange(bvssub.sLoopVoice20Fera[i2]);
                     for (int i3 = 0; i3 < _vf.Count; i3++)
                     {
                         if (!GameUty.FileSystem.IsExistentFile(_vf[i3]) && !GameUty.FileSystemOld.IsExistentFile(_vf[i3]) && _vf[i3] != "" && _vf[i3] != ".ogg")
@@ -7828,13 +7829,13 @@ namespace CM3D2.VibeYourMaid.Plugin
                             i3--;
                         }
                     }
-                    bvs[i].sLoopVoice20Fera[i2] = _vf.ToArray();
+                    bvssub.sLoopVoice20Fera[i2] = _vf.ToArray();
                 }
 
                 for (int i2 = 0; i2 < 5; i2++)
                 {
                     _vf = new List<string>();
-                    _vf.AddRange(bvs[i].sLoopVoice30Vibe[i2]);
+                    _vf.AddRange(bvssub.sLoopVoice30Vibe[i2]);
                     for (int i3 = 0; i3 < _vf.Count; i3++)
                     {
                         if (!GameUty.FileSystem.IsExistentFile(_vf[i3]) && !GameUty.FileSystemOld.IsExistentFile(_vf[i3]) && _vf[i3] != "" && _vf[i3] != ".ogg")
@@ -7844,13 +7845,13 @@ namespace CM3D2.VibeYourMaid.Plugin
                             i3--;
                         }
                     }
-                    bvs[i].sLoopVoice30Vibe[i2] = _vf.ToArray();
+                    bvssub.sLoopVoice30Vibe[i2] = _vf.ToArray();
                 }
 
                 for (int i2 = 0; i2 < 5; i2++)
                 {
                     _vf = new List<string>();
-                    _vf.AddRange(bvs[i].sLoopVoice30Fera[i2]);
+                    _vf.AddRange(bvssub.sLoopVoice30Fera[i2]);
                     for (int i3 = 0; i3 < _vf.Count; i3++)
                     {
                         if (!GameUty.FileSystem.IsExistentFile(_vf[i3]) && !GameUty.FileSystemOld.IsExistentFile(_vf[i3]) && _vf[i3] != "" && _vf[i3] != ".ogg")
@@ -7860,13 +7861,13 @@ namespace CM3D2.VibeYourMaid.Plugin
                             i3--;
                         }
                     }
-                    bvs[i].sLoopVoice30Fera[i2] = _vf.ToArray();
+                    bvssub.sLoopVoice30Fera[i2] = _vf.ToArray();
                 }
 
                 for (int i2 = 0; i2 < 5; i2++)
                 {
                     _vf = new List<string>();
-                    _vf.AddRange(bvs[i].sOrgasmVoice30Vibe[i2]);
+                    _vf.AddRange(bvssub.sOrgasmVoice30Vibe[i2]);
                     for (int i3 = 0; i3 < _vf.Count; i3++)
                     {
                         if (!GameUty.FileSystem.IsExistentFile(_vf[i3]) && !GameUty.FileSystemOld.IsExistentFile(_vf[i3]) && _vf[i3] != "" && _vf[i3] != ".ogg")
@@ -7876,13 +7877,13 @@ namespace CM3D2.VibeYourMaid.Plugin
                             i3--;
                         }
                     }
-                    bvs[i].sOrgasmVoice30Vibe[i2] = _vf.ToArray();
+                    bvssub.sOrgasmVoice30Vibe[i2] = _vf.ToArray();
                 }
 
                 for (int i2 = 0; i2 < 5; i2++)
                 {
                     _vf = new List<string>();
-                    _vf.AddRange(bvs[i].sOrgasmVoice30Fera[i2]);
+                    _vf.AddRange(bvssub.sOrgasmVoice30Fera[i2]);
                     for (int i3 = 0; i3 < _vf.Count; i3++)
                     {
                         if (!GameUty.FileSystem.IsExistentFile(_vf[i3]) && !GameUty.FileSystemOld.IsExistentFile(_vf[i3]) && _vf[i3] != "" && _vf[i3] != ".ogg")
@@ -7892,12 +7893,12 @@ namespace CM3D2.VibeYourMaid.Plugin
                             i3--;
                         }
                     }
-                    bvs[i].sOrgasmVoice30Fera[i2] = _vf.ToArray();
+                    bvssub.sOrgasmVoice30Fera[i2] = _vf.ToArray();
                 }
 
 
                 _vf = new List<string>();
-                _vf.AddRange(bvs[i].sLoopVoice40Vibe);
+                _vf.AddRange(bvssub.sLoopVoice40Vibe);
                 for (int i3 = 0; i3 < _vf.Count; i3++)
                 {
                     if (!GameUty.FileSystem.IsExistentFile(_vf[i3]) && !GameUty.FileSystemOld.IsExistentFile(_vf[i3]) && _vf[i3] != "" && _vf[i3] != ".ogg")
@@ -7907,7 +7908,7 @@ namespace CM3D2.VibeYourMaid.Plugin
                         i3--;
                     }
                 }
-                bvs[i].sLoopVoice40Vibe = _vf.ToArray();
+                bvssub.sLoopVoice40Vibe = _vf.ToArray();
 
             }
 
